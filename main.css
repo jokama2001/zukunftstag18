@@ -1,0 +1,93 @@
+/*CSS Allgemein*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+header{
+    height: 5vh;
+    width: 100vw;
+    padding: 10px;
+    background-color: white;
+}
+section{
+    width: 100vw;
+    min-height: 90vh;
+    padding: 10px;
+    background-color: white;
+}
+footer{
+    height: 5vh;
+    width: 100vw;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.aeussererBehealter{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 300px;
+    background-color: white;
+    display: block;
+}
+.innererBehaelter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/*CSS Selbstbeschreibung*/
+.behaelterSelbstbeschreibung{
+    overflow: hidden;
+}
+.selbstbeschreibung{
+}
+.bilderrahmen{
+    height: 300px;
+    width: 20%;
+    background-color: gainsboro;
+}
+.beschreibung{
+    width: 40%;
+    margin-left: 2%;
+    background-color: white;
+    align-self: center;
+}
+iframe{
+    height: 20vh;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+/*CSS Steckbrief*/
+.behaelterSteckbrief{
+}
+.steckbrief{
+}
+ol, ul{
+    margin-left: 20px;
+    width: 30%;
+
+}
+
+/*CSS Bilder*/
+.behaelterBilder{
+}
+.bilder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bilder img{
+    font-size: small;
+}
+.bilder div{
+    width: 30%;
+}
