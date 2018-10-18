@@ -33,7 +33,6 @@ footer{
 .aeussererBehealter{
     width: 100%;
     padding: 5px;
-    margin-bottom: 300px;
     background-color: white;
     display: block;
 }
@@ -88,33 +87,36 @@ ol, ul{
 }
 
 /*CSS Bilder*/
-.behaelterBilder{
-}
-.bilder{
+.gallerieBehaelter{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-.bilder div p{
-    height: 0;
-    transition-duration: 1s;
-    overflow: hidden;
+.behaelterBilder{
+    display: block;
 }
-.bild1:hover .p1{
-    height: auto;
-    t: 1s;
+.imgButton{
+    font-size: 200%;
+    margin: 10px;
 }
-.bild2:hover .p2{
-    height: auto;
-    transition-duration: 1s;
+
+.image{
+    padding: 5px;
 }
-.bild3:hover .p3{
-    height: auto;
-    transition-duration: 1s;
+
+.container{
+    width: 70%;
+    height: 70%;
+    margin: 20px;
 }
-.bilder img{
+
+img{
+    height: 100%;
+}
+
+.imgContainer{
+    height: 100%;
     width: 100%;
-}
-.bilder div{
-    width: 30%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
