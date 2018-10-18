@@ -52,11 +52,17 @@ footer{
 .bilderrahmen{
     height: 300px;
     width: 250px;
+    transition-duration: 1s;
     background-color: gainsboro;
 }
+.bilderrahmen:hover{
+    height: 500px;
+    width: 400px;
+    transition-duration: 1s;
+}
 .bilderrahmen img{
-    height: 300px;
-    width: 250px;
+    height: 100%;
+    width: 100%;
 }
 .beschreibung{
     width: 40%;
@@ -88,10 +94,27 @@ ol, ul{
     display: flex;
     justify-content: space-around;
 }
-
+.bilder div p{
+    height: 0;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+.bild1:hover .p1{
+    height: auto;
+    t: 1s;
+}
+.bild2:hover .p2{
+    height: auto;
+    transition-duration: 1s;
+}
+.bild3:hover .p3{
+    height: auto;
+    transition-duration: 1s;
+}
 .bilder img{
-    font-size: small;
+    width: 100%;
 }
 .bilder div{
     width: 30%;
+    overflow: hidden;
 }
