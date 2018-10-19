@@ -52,7 +52,6 @@ footer{
 .innererBehaelter{
     height: 100%;
     width: 100%;
-    display: flex;
 }
 .schriften{
     color: black;
@@ -64,12 +63,13 @@ footer{
     position: relative;
 }
 .selbstbeschreibung{
-    margin-top: 100px;
+    margin-top: 10vh;
+    display: flex;
 }
 .bilderrahmen{
-    height: 300px;
     width: 250px;
     transition-duration: 1s;
+    display: inline-block;
 }
 .bilderrahmen img{
     height: 100%;
@@ -77,20 +77,41 @@ footer{
 }
 .beschreibung{
     width: 30%;
-    margin-left: 2%;
     align-self: center;
-    position: absolute;
-    right: 0;
 }
 .steckbrief{
     align-self: center;
     margin-left: 2%;
-    width: 30%;
+    display: inline-block;
+
 }
 ol, ul{
     margin-left: 20px;
     display: inline-block;
-
+}
+.steckbriefMobile{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 680px) {
+    .beschreibung{
+        width: 100%;
+    }
+    .selbstbeschreibung{
+        flex-flow: column wrap;
+    }
+    .steckbriefMobile{
+        width: 100%;
+    }
+    section{
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .bilderrahmen{
+        width: 350px;
+    }
 }
 
 /*CSS Bilder*/
