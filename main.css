@@ -3,16 +3,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     position: relative;
     min-height: 100vh;
 }
 header{
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
     padding: 10px;
     background-color: white;
+    position: relative;
+    display: inline-block;
 }
 section{
     width: 100vw;
@@ -120,3 +123,47 @@ img{
     display: flex;
     justify-content: center;
 }
+
+/*CSS Menu*/
+.navigationsLeiste{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+}
+.menubuttonWrapper{
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+.menuUnderline{
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    transition-duration: 0.5s;
+
+}
+.menubuttonWrapper:hover .menuUnderline{
+    width: 130%;
+    transition-duration: 0.5s;
+}
+.behaelterLogo{
+    height: 100%;
+    max-width: 15%;
+}
+.logo{
+    height: 100%;
+}
+
