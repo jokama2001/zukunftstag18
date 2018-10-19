@@ -13,15 +13,13 @@ header{
     height: 10vh;
     width: 100vw;
     padding: 10px;
-    background-color: white;
     position: relative;
     display: inline-block;
 }
 section{
     width: 100vw;
     min-height: 90vh;
-    padding: 10px;
-    background-color: white;
+    padding: 100px;
 }
 footer{
     height: 5vh;
@@ -29,25 +27,28 @@ footer{
     padding: 10px;
     position: absolute;
     bottom: 0;
-    background-color: white;
     display: flex;
     justify-content: center;
 }
 .aeussererBehealter{
     width: 100%;
     padding: 5px;
-    background-color: white;
     display: block;
+    margin-bottom: 30px;
 }
 .innererBehaelter{
     height: 100%;
     width: 100%;
     display: flex;
 }
+.schriften{
+
+}
 
 /*CSS Selbstbeschreibung*/
 .behaelterSelbstbeschreibung{
     overflow: hidden;
+    position: relative;
 }
 .selbstbeschreibung{
 }
@@ -57,35 +58,25 @@ footer{
     transition-duration: 1s;
     background-color: gainsboro;
 }
-.bilderrahmen:hover{
-    height: 500px;
-    width: 400px;
-    transition-duration: 1s;
-}
 .bilderrahmen img{
     height: 100%;
     width: 100%;
 }
 .beschreibung{
-    width: 40%;
+    width: 30%;
     margin-left: 2%;
-    background-color: white;
     align-self: center;
-}
-iframe{
-    height: 20vh;
-    width: 100vw;
-    margin-top: 10px;
-}
-
-/*CSS Steckbrief*/
-.behaelterSteckbrief{
+    position: absolute;
+    right: 0;
 }
 .steckbrief{
+    align-self: center;
+    margin-left: 2%;
+    width: 30%;
 }
 ol, ul{
     margin-left: 20px;
-    width: 30%;
+    display: inline-block;
 
 }
 
@@ -167,3 +158,14 @@ a{
     height: 100%;
 }
 
+/*CSS Iframe*/
+.behaelterIframe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    height: 506px;
+    width: 826px;;
+    margin-top: 10px;
+}
