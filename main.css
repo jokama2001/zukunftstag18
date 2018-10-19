@@ -12,10 +12,9 @@ body{
 header{
     height: 10vh;
     width: 100vw;
-    padding: 10px;
     position: fixed;
-    top: 0;
     background-color: white;
+    top: 0;
     z-index: 1;
 }
 section{
@@ -138,6 +137,7 @@ img{
     align-items: center;
     position: absolute;
     right: 10%;
+    padding-top: 7px;
 }
 a{
     color: black;
