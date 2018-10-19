@@ -13,22 +13,36 @@ header{
     height: 10vh;
     width: 100vw;
     padding: 10px;
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 section{
     width: 100vw;
     min-height: 90vh;
-    padding: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
 }
 footer{
-    height: 5vh;
     width: 100vw;
     padding: 10px;
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.linkElement{
+    position: relative;
+    bottom: 25vh;
+}
+.linkPortfolio{
+    bottom: 10vh;
+}
+.linkBilder{
+    bottom: 40vh;
 }
 .aeussererBehealter{
     width: 100%;
@@ -42,7 +56,7 @@ footer{
     display: flex;
 }
 .schriften{
-
+    color: black;
 }
 
 /*CSS Selbstbeschreibung*/
@@ -51,12 +65,12 @@ footer{
     position: relative;
 }
 .selbstbeschreibung{
+    margin-top: 100px;
 }
 .bilderrahmen{
     height: 300px;
     width: 250px;
     transition-duration: 1s;
-    background-color: gainsboro;
 }
 .bilderrahmen img{
     height: 100%;
@@ -124,7 +138,6 @@ img{
     align-items: center;
     position: absolute;
     right: 10%;
-
 }
 a{
     color: black;

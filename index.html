@@ -12,21 +12,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
 </head>
 <body>
+
     <!--body ist die ganze Website welche ersichtlich sein wird-->
     <header>
 
         <nav class="navigationsLeiste">
-            <div class="menubuttonWrapper"><a href="#selbstbeschreibung" class="aSelbstbeschreibung">Portfolio</a><div class="menuUnderline"></div></div>
-            <div class="menubuttonWrapper"><a href="#steckbrief" class="aSteckbrief">Karte</a><div class="menuUnderline"></div></div>
-            <div class="menubuttonWrapper"><a href="#bilder" class="aBilder">Bilder</a><div class="menuUnderline"></div></div>
+            <div class="menubuttonWrapper"><a href="#portfolio" class="aSelbstbeschreibung"><span class="schriften">Portfolio</span></a><div class="menuUnderline"></div></div>
+            <div class="menubuttonWrapper"><a href="#steckbrief" class="aSteckbrief"><span class="schriften">Karte</span></a><div class="menuUnderline"></div></div>
+            <div class="menubuttonWrapper"><a href="#bilder" class="aBilder"><span class="schriften">Bilder</span></a><div class="menuUnderline"></div></div>
         </nav>
         <div class="behaelterLogo">
-            <img src="https://banner2.kisspng.com/20180331/ulq/kisspng-ionizing-radiation-symbol-radioactive-decay-nuclea-nuclear-5abf2a32a112d0.3944969015224776186598.jpg" alt="Portrait">
+            <img src="https://cdn.emojidex.com/emoji/seal/radioactive_sign.png?1422536080" alt="Portrait">
         </div>
 
     </header>
     <section>
-
+        <span id="portfolio" class="linkElement linkPortfolio"></span>
         <!--Bei der section handelt es sich um einen Bereich, welcher für alles mögliche benutzt werden kann-->
         <div class="aeussererBehealter behaelterSelbstbeschreibung">
             <div class="innererBehaelter selbstbeschreibung">
@@ -36,14 +37,14 @@
                     <img src="https://cdn.shopify.com/s/files/1/2663/7914/files/goofy-face2_large.png?v=1528926935" alt="Portrait">
                 </div>
                 <div class="steckbrief">
-                    <ol>
+                    <ol class="schriften">
                         <li>spagheti</li>
                         <li>Pizza Hawei aber ohne schinken</li>
                         <li>test</li>
                         <li>test</li>
                     </ol>
                 </div>
-                <p class="beschreibung">
+                <p class="beschreibung schriften">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid, aspernatur atque cupiditate doloribus enim, et expedita incidunt ipsa maxime molestiae possimus quasi quod recusandae, rerum vero voluptate. Debitis, quia?
                     <!--p ist ein Paragraph, also ein Fliestext-->
                 </p>
@@ -51,10 +52,12 @@
             </div>
         </div>
         <div class="behaelterIframe">
-            <iframe id="steckbrief" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.5794573687635!2d9.367640715832389!3d47.42014340883258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1fb4d4a2f481%3A0x5f38e113991559cd!2sNamics+AG!5e0!3m2!1sen!2sch!4v1539609398424" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span id="steckbrief" class="linkElement"></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.5794573687635!2d9.367640715832389!3d47.42014340883258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1fb4d4a2f481%3A0x5f38e113991559cd!2sNamics+AG!5e0!3m2!1sen!2sch!4v1539609398424" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <div id="bilder" aeussererBehealter behaelterBilder">
+        <div class="aeussererBehealter behaelterBilder">
+        <span id="bilder" class="linkElement linkBilder"></span>
             <div class="gallerieBehaelter">
             <i class="fas fa-angle-left left imgButton"></i>
 
@@ -82,7 +85,6 @@
 
 
 
-
             <i class="fas fa-angle-right right imgButton"></i>
             </div>
         </div>
@@ -90,7 +92,8 @@
 
     </section>
     <footer>
-        Fusszeile
+        <p class="schriften">19. Oktober 2018</p>
+        <p class="schriften">Maximilian Kaspar</p>
         <!--Beim footer handelt es sich um die Fusszeile-->
     </footer>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
