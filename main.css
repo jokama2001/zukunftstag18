@@ -112,6 +112,7 @@ ol, ul{
     .bilderrahmen{
         width: 350px;
     }
+
 }
 
 /*CSS Bilder*/
@@ -159,6 +160,12 @@ img{
     position: absolute;
     right: 10%;
     padding-top: 7px;
+}
+@media screen and (max-width: 680px) {
+    .navigationsLeiste{
+        width: 70%;
+        right: 5%;
+    }
 }
 a{
     color: black;
